@@ -1,0 +1,14 @@
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+/work/
+/vendor/
+/node_modules/
+/coverage/
+/backups/
+.phpunit.cache/
