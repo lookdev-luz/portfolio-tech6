@@ -1,0 +1,43 @@
+/* Topologia demonstrativa do hero: uma superfície SVG em ambos os temas. */
+.core-panel{display:flex;flex-direction:column;min-height:0;overflow:visible}
+.topology-stage{position:relative;min-height:365px;flex:1;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 49%,#651b1b39,transparent 70%),linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:auto,28px 28px,28px 28px;cursor:grab}
+.topology-stage:active{cursor:grabbing}
+#network-topology{display:block;width:100%;height:auto;max-height:490px;aspect-ratio:8/5;touch-action:pan-y;user-select:none}
+.topology-link{stroke:#a49393;stroke-width:2.1;opacity:.7;vector-effect:non-scaling-stroke}
+.topology-link.is-highlighted{stroke:#f06464;stroke-width:2.7;opacity:.95}
+.topology-link.is-dimmed{opacity:.14}
+.topology-link.is-muted{opacity:.45}
+.topology-node{cursor:pointer;transition:opacity .2s}
+.topology-node rect{fill:#252020;stroke:#a65a5a;stroke-width:1.6;transition:fill .2s,stroke .2s}
+.topology-node text{fill:#f4eded;font:600 12px/1 var(--body);pointer-events:none}
+.topology-node-dot{fill:#ff6969;pointer-events:none}
+.topology-node:hover rect,.topology-node:focus-visible rect{fill:#503030;stroke:#ff8b8b;stroke-width:2.4}
+.topology-node.is-selected rect{fill:#622727;stroke:#ff9191;stroke-width:2.7}
+.topology-node.is-dimmed{opacity:.25}
+.topology-node:focus-visible{outline:none}
+.topology-node:focus-visible rect{stroke-dasharray:4 3}
+.topology-packet{fill:#ffe5b5;stroke:#e74747;stroke-width:1.5;filter:drop-shadow(0 0 4px #ffb56d)}
+.topology-cluster rect{fill:#8c33332b;stroke:#d26a6a;stroke-width:1.5;stroke-dasharray:5 4}
+.topology-cluster text{fill:#f3b6b6;font:700 10px var(--mono);letter-spacing:.06em}
+.topology-cluster.is-dimmed{opacity:.25}
+.core-panel .core-controls{position:relative;z-index:3;align-items:center;gap:.55rem;padding:.8rem 1rem;background:var(--surface)}
+.core-panel .mode-controls{display:flex;flex-wrap:wrap;gap:.35rem}
+.core-panel .core-controls button,.core-panel .core-controls select{min-height:36px;padding:.45rem .65rem;font-size:.7rem;background:var(--bg);border:1px solid var(--line);color:var(--text)}
+.core-panel .core-controls button:hover,.core-panel .core-controls select:hover{border-color:var(--red)}
+.core-panel .core-controls button[aria-pressed=true]{border-color:var(--red);background:#672626;color:#fff}
+.core-panel .core-controls label{display:flex;align-items:center;gap:.4rem;color:var(--secondary)}
+.core-panel .core-controls select{max-width:150px}
+.core-panel>.small-note{min-height:2.8rem;padding:.55rem 1rem .8rem;margin:0;background:var(--surface);color:var(--secondary);border-top:1px solid var(--line)}
+:root[data-resolved-theme="light"] .topology-stage{background:radial-gradient(ellipse at center,#e6bdbd70,transparent 70%),linear-gradient(#70272713 1px,transparent 1px),linear-gradient(90deg,#70272713 1px,transparent 1px);background-size:auto,28px 28px,28px 28px}
+:root[data-resolved-theme="light"] .topology-link{stroke:#806f6f;opacity:.85}
+:root[data-resolved-theme="light"] .topology-link.is-highlighted{stroke:#a32626;opacity:1}
+:root[data-resolved-theme="light"] .topology-node rect{fill:#fffaf8;stroke:#934242}
+:root[data-resolved-theme="light"] .topology-node text{fill:#302626}
+:root[data-resolved-theme="light"] .topology-node-dot{fill:#af2828}
+:root[data-resolved-theme="light"] .topology-node:hover rect,:root[data-resolved-theme="light"] .topology-node:focus-visible rect{fill:#f8dedb;stroke:#a32626}
+:root[data-resolved-theme="light"] .topology-node.is-selected rect{fill:#f6cdca;stroke:#a32626}
+:root[data-resolved-theme="light"] .topology-cluster rect{fill:#d85d5d20;stroke:#a33f3f}
+:root[data-resolved-theme="light"] .topology-cluster text{fill:#842a2a}
+:root[data-resolved-theme="light"] .core-panel .core-controls button[aria-pressed=true]{background:#f5dfdc;color:#562222}
+@media(max-width:1000px){.topology-stage{min-height:340px}}
+@media(max-width:550px){.topology-stage{min-height:0;padding:0}.topology-stage #network-topology{aspect-ratio:360/790;max-height:none}.core-panel .core-controls{gap:.6rem}.core-panel .mode-controls{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.core-panel .mode-controls button{padding:.48rem .2rem;font-size:.69rem}.core-panel .core-controls label{flex:1 1 100%;justify-content:space-between}.core-panel .core-controls select{max-width:none;flex:1}.core-panel .core-controls button{min-height:40px}}

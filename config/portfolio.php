@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 // Personalize este arquivo antes da publicação. Valores de contato vazios são omitidos.
 return [
-    'name' => 'Seu Nome', 'professional_name' => 'Seu Nome', 'role' => 'Desenvolvedor de software',
-    'headline' => 'Conectando tecnologia a novas possibilidades.',
-    'description' => 'Desenvolvimento de sites, sistemas e soluções digitais que conectam ideias, informações e necessidades reais.',
+    'name' => 'André Valença (demonstração)', 'professional_name' => 'André Valença', 'role' => 'Estudante de cibersegurança e redes',
+    'headline' => 'Redes. Segurança. Prática.',
+    'description' => 'Estudos demonstrativos de redes, Linux e segurança em ambientes autorizados.',
     'bio' => 'Sou desenvolvedor em início de carreira e gosto de transformar problemas cotidianos em experiências digitais claras, úteis e bem cuidadas. Estou construindo meu percurso por meio de projetos demonstrativos e aprendizado contínuo.',
     'photo' => '', 'email' => '', 'phone' => '', 'whatsapp' => '', 'github_user' => '', 'github_url' => '', 'linkedin' => '',
     'location' => 'Brasil', 'available' => true,
-    'indexing' => false, 'canonical' => '', 'domain' => 'https://tech6.lucasluz.me',
+    'indexing' => false, 'canonical' => '', 'domain' => '',
     'technologies' => [
         ['id'=>'html','name'=>'HTML5','category'=>'Frontend','description'=>'Estrutura semântica para páginas acessíveis.','uses'=>'Sites, formulários e conteúdo estruturado.'],
         ['id'=>'css','name'=>'CSS3','category'=>'Frontend','description'=>'Estilos responsivos e sistemas visuais.','uses'=>'Interfaces adaptáveis e componentes.'],

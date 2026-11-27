@@ -1,0 +1,165 @@
+{
+  "responsive": [
+    {
+      "width": 320,
+      "height": 568,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": 200,
+      "nodes": 13,
+      "links": 16,
+      "overflow": 0,
+      "errors": [],
+      "missing": []
+    }
+  ],
+  "resources": [
+    "assets/js/theme-control.js",
+    "assets/css/variables.css",
+    "assets/css/main.css",
+    "assets/css/hud.css",
+    "assets/css/components.css",
+    "assets/css/animations.css",
+    "assets/css/responsive.css",
+    "assets/css/theme-control.css",
+    "assets/css/topology.css?v=1795706915",
+    "assets/js/topology.js?v=1795707038",
+    "assets/js/network-map.js",
+    "assets/js/protocol-lab.js",
+    "assets/js/database-visualizer.js",
+    "assets/js/mission-control.js",
+    "assets/js/navigation.js",
+    "assets/js/main.js"
+  ],
+  "modes": {
+    "flow": {
+      "signature": "38e475ca01ff5809226ebda27b27efa132d67f686e0442f33b314356cd6efff6",
+      "selected": 0
+    },
+    "cluster": {
+      "signature": "25f4a819f46cc35634d197a7979fc4873144eab22415a6aea438ed83e1853511",
+      "selected": 0
+    },
+    "focus": {
+      "signature": "16d592ecc36bf9be93a72bf4a39338cd1bdb1eb3f555aaeefaec733d2d0ea524",
+      "selected": 1
+    },
+    "network": {
+      "signature": "cbe7b6b8298b2c96a7adbcc52e2ac536d5e6b75cc7716bd010bfe08a9d6016de",
+      "selected": 1
+    }
+  },
+  "filters": {
+    "perimeter": {
+      "dimmed": 11,
+      "description": "Firewall · perímetro: Controla a comunicação entre redes. Área: perímetro."
+    },
+    "infrastructure": {
+      "dimmed": 11,
+      "description": "Estrutura e conexões entre componentes. Área: infraestrutura."
+    },
+    "applications": {
+      "dimmed": 10,
+      "description": "Estrutura e conexões entre componentes. Área: aplicações."
+    },
+    "data": {
+      "dimmed": 11,
+      "description": "Estrutura e conexões entre componentes. Área: dados."
+    },
+    "monitoring": {
+      "dimmed": 11,
+      "description": "Estrutura e conexões entre componentes. Área: monitoramento."
+    },
+    "devices": {
+      "dimmed": 11,
+      "description": "Estrutura e conexões entre componentes. Área: dispositivos."
+    },
+    "all": {
+      "dimmed": 0,
+      "description": "Estrutura e conexões entre componentes."
+    }
+  },
+  "pause": {
+    "moving_before": true,
+    "stopped": true,
+    "resumed": true
+  },
+  "movement": {
+    "no_hover_motion": true,
+    "dragged": "translate(61.5195827794253 35.341036915840064)",
+    "reset": true
+  },
+  "light_signature": "14ed84a611d981731332e8720841ee1fdb01f95a67e91c26c0184475577cbc2e",
+  "accessibility": {
+    "reduced_motion_paused": true,
+    "keyboard_selection": true
+  },
+  "mobile": {
+    "modes": [
+      "network",
+      "flow",
+      "cluster",
+      "focus"
+    ],
+    "filter": "data",
+    "selected": "database"
+  }
+}
